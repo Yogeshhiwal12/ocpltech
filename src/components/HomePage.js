@@ -23,6 +23,14 @@ const useStyles = makeStyles((theme) => ({
     justifyContent:"center",
     margin: theme.spacing(4),
   },
+  coloredButton: {
+    background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)',
+    borderRadius: 3,
+    border: 0,
+    color: 'white',
+    boxShadow: '0 3px 5px 2px rgba(255, 105, 135, .3)',
+    
+  },
 }));
 
 const HomePage = () => {
@@ -51,7 +59,7 @@ const HomePage = () => {
       <Box className={classes.buttons}>
         
         <motion.div variants={buttonVariants} whileHover="hover">
-          <Button component={Link} to="/register" color="primary" variant="contained">
+          <Button component={Link} to="/register"  className={classes.coloredButton} variant="contained">
             Let's Start
           </Button>
         </motion.div>

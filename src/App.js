@@ -9,12 +9,15 @@ import { AuthProvider } from "./components/AuthContext";
 import PageTransition from "./components/PageTransition";
 import HomePage from "./components/HomePage";
 import './App.css';
+import Navbar from "./components/Navbar";
 
 const App = () => {
   return (
   <div className="App">
     <AuthProvider>
+      
       <Router>
+      <Navbar />
         <Container>
           <AnimatePresence mode="wait">
             <Routes>
