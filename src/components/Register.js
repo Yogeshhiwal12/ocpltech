@@ -79,7 +79,7 @@ const Register = () => {
             });
             setSnackbarOpen(true);
             setTimeout(() => {
-              navigate("/dashboard");
+              navigate("/data-form");
             }, 2000);
           } else {
             await axios.post("http://91.203.132.6/login", {
@@ -88,7 +88,7 @@ const Register = () => {
             });
             setSnackbarOpen(true);
             setTimeout(() => {
-              navigate("/dashboard");
+              navigate("/data-form");
             }, 2000);
           }
           
